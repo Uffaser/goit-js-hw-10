@@ -1,0 +1,59 @@
+.form {
+    width: 360px;
+    margin: 50px;
+}
+
+.delay-label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    margin-bottom: 16px;
+}
+
+.delay-input {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    padding: 8px 16px;
+    outline: transparent;
+} 
+
+legend {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
+fieldset {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.notification-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    background-color: #4e75ff;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 360px;
+    border: none;
+    transition: background-color ease-in-out .2s;
+}
+
+.notification-btn:hover{
+    background-color: #6c8cff;
+} 
+
