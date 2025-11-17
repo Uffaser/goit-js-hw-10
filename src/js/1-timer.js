@@ -44,7 +44,7 @@ const options = {
 
             disable();
         } else {
-            userSelectedDate = selectDate.selectedDates[0];
+            userSelectedDate = selectedDates[0];
             console.log(userSelectedDate);
 
             enable();
@@ -74,14 +74,15 @@ const timerValue = {
 
             const result = convertMs(this.diff);
             addLeadingZero(result);
-            if (result.seconds === -1) {
+
+            if (this.diff < 1000) {
                 refs.days.textContent = '00';
                 refs.hours.textContent = '00';
                 refs.minutes.textContent = '00';
                 refs.seconds.textContent = '00';
             }
 
-            if (this.diff <= 0) {
+            if (this.diff < 1000) {
                 clearInterval(this.intervalID);
 
                 this.isActive = false;

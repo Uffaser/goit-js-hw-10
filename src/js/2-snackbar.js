@@ -29,19 +29,19 @@ function handleCreateNotification(e) {
     }
 
     const promise = createPromise(state, delay);
-    promise.then(() => {
+    promise.then(success => {
         iziToast.success({
             icon: '',
-            title: '✅',
-            message: `Fulfilled promise in ${delay}ms`,
+            title: '',
+            message: success,
             position: 'topRight',
         });
     });
-    promise.catch(() => {
+    promise.catch(error => {
         iziToast.error({
             icon: '',
-            title: '❌',
-            message: `Rejected promise in ${delay}ms`,
+            title: '',
+            message: error,
             position: 'topRight',
         });
     });
